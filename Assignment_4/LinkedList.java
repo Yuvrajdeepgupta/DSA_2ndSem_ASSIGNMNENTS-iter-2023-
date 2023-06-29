@@ -18,7 +18,7 @@ public class LinkedList
 	
 	static Node start;
 	
-	public static void create()
+	public static Node create()
 	{
 		Node temp=start;
 		float mark=0;
@@ -43,6 +43,7 @@ public class LinkedList
 			System.out.println("Enter student registration number (0 to stop):");
 			regd_no=sc.nextInt();
 		}
+		return start;
 	}
 	
 	public static void InsBeg()
