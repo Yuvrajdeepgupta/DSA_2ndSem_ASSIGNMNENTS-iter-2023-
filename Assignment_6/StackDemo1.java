@@ -28,7 +28,7 @@ public class StackDemo1
 		return top;
 	}
 	
-	public static int pop(int S[],int top)
+	public static int pop(int S[])
 	{
 		try 
 		{
@@ -49,7 +49,7 @@ public class StackDemo1
 	
 	public static void display(int S[],int top)
 	{
-		for(int i=0;i<=top;i++)
+		for(int i=top;i>=0;i--)
 		{
 			System.out.println("___");
 			System.out.println("|"+S[i]+"|");
@@ -96,9 +96,12 @@ public class StackDemo1
 		 				System.exit(0);
 		 			case 1:
 		 				top=push(Stack, top);
+		 				System.out.println(top);
 		 				break;
 		 			case 2:
-		 				top=pop(Stack, top);
+		 				System.out.println(top);
+		 				int x=pop(Stack);
+		 				System.out.println(top);
 		 				break;
 		 			case 3:
 		 				display(Stack, top);
