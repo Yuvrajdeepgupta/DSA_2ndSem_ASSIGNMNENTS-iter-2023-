@@ -2,9 +2,9 @@ import java.util.*;
 class NumberFormatException extends Exception
 {
 	private int n;
-	public NumberFormatException() 
+	public NumberFormatException(String msg) 
 	{
-		System.out.println();
+		super(msg);
 	}
 }
 
@@ -24,7 +24,7 @@ public class PROG_1
 			}
 			else
 			{
-				throw new NumberFormatException();
+				throw new NumberFormatException("Negative number");
 			}
 		}
 		catch(NumberFormatException e)
